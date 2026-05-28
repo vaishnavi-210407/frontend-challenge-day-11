@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+</head>
+
+      <div class="quiz-container">
+
+    <div id="quizBox">
+
+      <div class="top-bar">
+        <div class="timer">⏳ Time: <span id="time">15</span>s</div>
+        <div class="score">⭐ Score: <span id="score">0</span></div>
+      </div>
+
+      <div class="question-number" id="questionNumber">
+        Question 1 of 5
+      </div>
+
+      <div class="question" id="question">
+        Question Text
+      </div>
+
+      <div class="options" id="options">
+      </div>
+
+      <button class="next-btn" id="nextBtn">
+        Next Question →
+      </button>
+
+    </div>
+
+    <div class="result-box" id="resultBox">
+      <h1>🎉 Quiz Completed!</h1>
+      <p>Your Score: <span id="finalScore"></span></p>
+
+      <button class="restart-btn" onclick="restartQuiz()">
+        Restart Quiz
+      </button>
+    </div>
+
+  </div>
+
+
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
